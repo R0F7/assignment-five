@@ -92,8 +92,12 @@ nextBtn.addEventListener('click', function () {
 
     if (count >= 1 && numberFieldValue >= 1) {
         labelInput.removeAttribute('disabled', false);
-    } else {
+    }else if(count == 0 && numberFieldValue == 0){
         alert('Please Select minimum one seat and Fill Up your Phone Number ');
+    }else if (count <= 0) {
+        alert('Please Select minimum one seat');
+    }else if (numberFieldValue <= 0) {
+        alert('Fill Up your Phone Number ');
     }
 
 })
