@@ -336,11 +336,7 @@
               </div>
 
               <ul id="UL" class="text-[rgba(3,7,18,0.6)] text-base font-normal gap-x-44  mt-4 border-b pb-4">
-                <!-- <tr>
-                  <td>jfghjghj</td>
-                <td>ghbdfgh</td>
-                <td>hjfh</td>
-                </tr> -->
+
               </ul>
 
               <div class="flex justify-between my-4 ">
@@ -380,9 +376,9 @@
                   class="input input-bordered bg-[rgba(19,19,24,0.03)] h-16  w-full mt-4 " id="email" />
               </label>
 
-              <input
-                class="col-span-1 lg:col-span-2 text-xl font-bold py-4 px-6 bg-[rgb(29,209,0)] text-white rounded-xl my-6 lg:mt-8 w-full"
-                type="button" value="Next" id="next-btn">
+              <label
+                class="text-xl font-bold py-4 px-6 bg-[rgb(29,209,0)] text-white rounded-xl my-6 lg:mt-8 w-full text-center"
+                type="button" value="" id="next-btn" for="my_modal_6">Next</label>
 
               <div class="text-center">
                 <a href="#" class="underline mr-10">Terms and Conditions</a>
@@ -396,6 +392,35 @@
 
 
       </div>
+    </section>
+
+    <section>
+      <!-- <label for="my_modal_6" class="btn">open modal</label> -->
+
+      <input type="checkbox" id="my_modal_6" class="modal-toggle" disabled/>
+      <div class="modal" role="dialog">
+        <div class="">
+          <div class="bg-[rgb(242,241,241)] rounded-lg py-[225px] px-[360px]">
+            <div class="bg-[rgb(255,255,255)] rounded-lg text-center w-[718px] py-24 mx-auto">
+              <div class="flex justify-center"><img src="./images/success.png" alt=""></div>
+              <h4 class="text-[rgb(39,174,96)] text-2xl font-bold py-10">SUCCESS</h4>
+              <p class="text-[rgb(74,74,74)] font-medium text-xl mb-2.5">Thank you for Booking Our Bus Seats. <br>
+                We are working hard to find the best service and deals for you. </p>
+              <p class="text-[rgb(74,74,74)] font-light text-xl">Shortly you will find a confirmation in your email.</p>
+              <div class="text-center mt-5">
+                <label for="my_modal_6" class="bg-[rgb(39,174,96)] text-[rgb(255,255,255)] rounded-3xl py-3 px-20">Continue</label>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+
+
+
+
+
     </section>
   </main>
 

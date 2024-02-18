@@ -1,62 +1,3 @@
-// const seats = document.querySelectorAll('.seat');
-// let count = 0;
-
-// for (const seat of seats) {
-//     seat.addEventListener('click', function myEventListenerFunction (event) {
-//         seat.classList.add('bg-[rgb(29,209,0)]', 'text-white');
-//         count = count + 1;
-//         document.getElementById('count-seat').innerText = count;
-
-//         const seatLeftText = document.getElementById('seat-left').innerText;
-//         const seatLeftNumber = parseInt(seatLeftText);
-//         document.getElementById('seat-left').innerText = seatLeftNumber -1;
-
-//         const seatName = event.target.innerText;
-
-//         const p = document.createElement('p');
-//         p.innerText = seatName;
-
-//         const p2 = document.createElement("p");
-//         p2.innerText = 'Economoy';
-
-//         const p3 = document.createElement("p");
-//         p3.innerText = '550';
-
-//         const li = document.createElement('li');
-//         li.appendChild(p);
-//         li.appendChild(p2);
-//         li.appendChild(p3);
-
-//         const ul = document.getElementById('UL');
-
-//         ul.appendChild(li);
-
-//         const totalPriceText = document.getElementById('total-price').innerText;
-//         const totalPrice = parseInt(totalPriceText);
-//         document.getElementById('total-price').innerText = totalPrice + 550 ;
-
-
-//     })
-// }
-
-
-
-
-
-// function setInnerTextById(id, value) {
-//     document.getElementById(id).innerText = value;
-// }
-
-// //set total cost
-// function setTotalPrice(id, value) {
-//     const totalCost = document.getElementById(id).innerText;
-//     const convertedTotalCost = parseInt(totalCost);
-//     const sum = convertedTotalCost - value;
-//     setInnerTextById(id, sum);
-// }\
-
-
-
 const seats = document.querySelectorAll('.seat');
 let count = 0;
 
@@ -141,21 +82,18 @@ applyBtn.addEventListener('click', function () {
 
 })
 
+
 const nextBtn = document.getElementById('next-btn');
+const labelInput = document.getElementById('my_modal_6');
 
 nextBtn.addEventListener('click', function () {
 
+    const numberFieldValue = document.getElementById('number').value.length;
 
-
-
-    
-
-    // const numberFieldValue = document.getElementById('number').value.length;
-
-    // if (count >= 1 && numberFieldValue >= 1) {
-    //     console.log('ghdfgh');
-    // } else {
-    //     nextBtn.setAttribute('disabled',true)
-    // }
+    if (count >= 1 && numberFieldValue >= 1) {
+        labelInput.removeAttribute('disabled', false);
+    } else {
+        alert('Please Select minimum one seat and Fill Up your Phone Number ');
+    }
 
 })
