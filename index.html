@@ -97,22 +97,25 @@
 
         <div class="flex gap-24 absolute -bottom-20 right-40">
 
-          <div class="bg-[rgb(255,255,255)] px-8 py-9 rounded-3xl border-b-4 border-[rgb(29,209,0)] flex gap-x-4 w-[340px]">
-            <img class="border-2 border-dashed " src="./images/people.png" alt="">
+          <div
+            class="bg-[rgb(255,255,255)] px-8 py-7 rounded-3xl border-b-4 border-[rgb(29,209,0)] flex gap-x-4 w-[340px]">
+            <img src="./images/people.png" alt="">
             <div>
               <h4 class="text-[rgb(3,7,18)] font-bold text-4xl mb-2 font-sans">500K+</h4>
               <p class="text-[rgba(3,7,18,0.6)] font-normal text-xl">Registered users</p>
             </div>
           </div>
-          <div class="bg-[rgb(255,255,255)] px-8 py-9 rounded-3xl border-b-4 border-[rgb(29,209,0)] flex gap-x-4 w-[340px]">
-            <img class="border-2 border-dashed " src="./images/ticket-cupon.png" alt="">
+          <div
+            class="bg-[rgb(255,255,255)] px-8 py-7 rounded-3xl border-b-4 border-[rgb(29,209,0)] flex gap-x-4 w-[340px]">
+            <img src="./images/ticket-cupon.png" alt="">
             <div>
               <h4 class="text-[rgb(3,7,18)] font-bold text-4xl mb-2 font-sans">1.7 lacks+</h4>
               <p class="text-[rgba(3,7,18,0.6)] font-normal text-xl">Tickets sold</p>
             </div>
           </div>
-          <div class="bg-[rgb(255,255,255)] px-8 py-9 rounded-3xl border-b-4 border-[rgb(29,209,0)] flex gap-x-4 w-[340px]">
-            <img class="border-2 border-dashed " src="./images/stoppage.png" alt="">
+          <div
+            class="bg-[rgb(255,255,255)] px-8 py-7 rounded-3xl border-b-4 border-[rgb(29,209,0)] flex gap-x-4 w-[340px]">
+            <img src="./images/stoppage.png" alt="">
             <div>
               <h4 class="text-[rgb(3,7,18)] font-bold text-4xl mb-2 font-sans">80K++</h4>
               <p class="text-[rgba(3,7,18,0.6)] font-normal text-xl">Rental partners</p>
@@ -168,7 +171,7 @@
     </section>
 
     <!-- P.H Paribahan section  -->
-    <section class="mb-32 bg-[rgb(247,248,248)] rounded-t-[88px] py-[120px] border-t-4 border-t-[rgb(29,209,0)] "
+    <section class=" bg-[rgb(247,248,248)] rounded-t-[88px] py-[120px] border-t-4 border-t-[rgb(29,209,0)] "
       id="Paribahan">
       <div class="container  mx-auto">
 
@@ -376,9 +379,15 @@
                 <h3 class="text-[rgb(3,7,18)] text-base font-medium font-sans">BDT <span id="total-price">00</span></h3>
               </div>
 
+              <div id="discountDiv" class="flex justify-between my-4 hidden">
+                <h2 class="text-[rgb(3,7,18)] text-base font-medium ">Discounted Price</h2>
+                <h3 class="text-[rgb(3,7,18)] text-base font-medium font-sans">BDT <span id="discount-price">00</span>
+                </h3>
+              </div>
+
               <div id="apply-btn-and-input-field">
                 <div class="join w-full">
-                  <input id="coupon-field" type="text" placeholder="Have any coupon?"
+                  <input disabled id="coupon-field" type="text" placeholder="Have any coupon?"
                     class="input join-item bg-[rgb(255,255,255)] w-full" />
                   <button disabled id="apply-btn"
                     class="btn join-item bg-[rgb(29,209,0)] text-white text-base font-semibold px-10">Apply</button>
@@ -408,6 +417,11 @@
                   class="input input-bordered bg-[rgba(19,19,24,0.03)] h-16  w-full mt-4 " id="email" />
               </label>
 
+              <!-- <button disabled id="next-btn" class="w-full my-6 btn  bg-[rgb(29,209,0)] rounded-xl">
+                <label class="text-xl font-bold py-4 px-6  text-white rounded-xl w-full text-center" type="button"
+                  value="" for="my_modal_6">Next</label>
+             </button> -->
+
               <label
                 class="text-xl font-bold py-4 px-6 bg-[rgb(29,209,0)] text-white rounded-xl my-6 lg:mt-8 w-full text-center"
                 type="button" value="" id="next-btn" for="my_modal_6">Next</label>
@@ -432,19 +446,18 @@
       <input type="checkbox" id="my_modal_6" class="modal-toggle" disabled />
       <div class="modal" role="dialog">
         <div class="">
-          <!-- <div class="bg-[rgb(242,241,241)] rounded-lg py-[225px] px-[360px]"> -->
-            <div class="bg-[rgb(255,255,255)] rounded-lg text-center w-[718px] py-24 mx-auto">
-              <div class="flex justify-center"><img src="./images/success.png" alt=""></div>
-              <h4 class="text-[rgb(39,174,96)] text-2xl font-bold py-10">SUCCESS</h4>
-              <p class="text-[rgb(74,74,74)] font-medium text-xl mb-2.5">Thank you for Booking Our Bus Seats. <br>
-                We are working hard to find the best service and deals for you. </p>
-              <p class="text-[rgb(74,74,74)] font-light text-xl">Shortly you will find a confirmation in your email.</p>
-              <div class="text-center mt-5">
-                <label for="my_modal_6"
-                  class="bg-[rgb(39,174,96)] text-[rgb(255,255,255)] rounded-3xl py-3 px-20">Continue</label>
-              </div>
+
+          <div class="bg-[rgb(255,255,255)] rounded-lg text-center w-[718px] py-24 mx-auto">
+            <div class="flex justify-center"><img src="./images/success.png" alt=""></div>
+            <h4 class="text-[rgb(39,174,96)] text-2xl font-bold py-10">SUCCESS</h4>
+            <p class="text-[rgb(74,74,74)] font-medium text-xl mb-2.5">Thank you for Booking Our Bus Seats. <br>
+              We are working hard to find the best service and deals for you. </p>
+            <p class="text-[rgb(74,74,74)] font-light text-xl">Shortly you will find a confirmation in your email.</p>
+            <div class="text-center mt-5">
+              <label for="my_modal_6" onclick="resetPage()"
+                class="bg-[rgb(39,174,96)] text-[rgb(255,255,255)] rounded-3xl py-3 px-20">Continue</label>
             </div>
-          <!-- </div> -->
+          </div>
 
         </div>
       </div>

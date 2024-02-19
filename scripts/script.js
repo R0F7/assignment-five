@@ -44,6 +44,8 @@ function myEventListenerFunction(event) {
     if (count >= 4) {
         for (const seat of seats) {
             seat.removeEventListener('click', myEventListenerFunction);
+            document.getElementById("coupon-field").removeAttribute('disabled', false);
+            seat.removeEventListener('click', myEventListenerFunction);
             document.getElementById("apply-btn").removeAttribute('disabled', false);
         }
     }
@@ -66,6 +68,10 @@ applyBtn.addEventListener('click', function () {
         const grandTotalAmount = grandTotal - discountedPrice;
         document.getElementById('grand-total').innerText = grandTotalAmount;
 
+        const discountDiv = document.getElementById('discountDiv');
+        document.getElementById('discount-price').innerText = discountedPrice;
+        discountDiv.classList.remove('hidden');
+
         applyBtnInputField.classList.add('hidden');
 
     } else if (couponCode === 'Couple 20') {
@@ -75,12 +81,28 @@ applyBtn.addEventListener('click', function () {
         const grandTotalAmount = grandTotal - discountedPrice;
         document.getElementById('grand-total').innerText = grandTotalAmount;
 
+        const discountDiv = document.getElementById('discountDiv');
+        document.getElementById('discount-price').innerText = discountedPrice;
+        discountDiv.classList.remove('hidden');
+
         applyBtnInputField.classList.add('hidden');
     } else {
         alert('Invalid Coupon Code');
     }
 
 })
+
+// const numberField = document.getElementById('number');// .value.length
+// numberField.addEventListener('change', function getNumberFieldValue(e) {
+//     const numberFieldValue = e.target.value.length;
+
+//     if (numberFieldValue >= 1 && count >= 1) {
+//         nextBtn.classList.add('bg-[rgb(29,209,0)]');
+//         nextBtn.removeAttribute('disabled', false);
+//         labelInput.removeAttribute('disabled', false);
+//     }else {}
+// });
+
 
 
 const nextBtn = document.getElementById('next-btn');
@@ -92,12 +114,18 @@ nextBtn.addEventListener('click', function () {
 
     if (count >= 1 && numberFieldValue >= 1) {
         labelInput.removeAttribute('disabled', false);
-    } else if(count == 0 && numberFieldValue == 0){
+    } else if (count == 0 && numberFieldValue == 0) {
         alert('Please Select minimum one seat and Fill Up your Phone Number ');
-    }else if (count <= 0) {
+    } else if (count <= 0) {
         alert('Please Select minimum one seat');
-    }else if (numberFieldValue <= 0) {
+    } else if (numberFieldValue <= 0) {
         alert('Fill Up your Phone Number ');
     }
 
 })
+
+
+
+function resetPage() {
+    location.reload();
+}
