@@ -6,14 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>P Paribahan</title>
 
+  <!-- google font link  -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
 
+  <!-- daisyUI CDN  -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
 
+  <!-- custom css  -->
   <style>
     body {
       font-family: "Raleway", sans-serif;
@@ -71,8 +74,9 @@
 
     </nav>
 
+    <!-- banner section -->
     <div class="banner-section mt-14">
-      <div class="container  w-10/12 mx-auto">
+      <div class="container  mx-auto relative">
 
         <div class="hero h-[720px] bg-cover bg-no-repeat object-cover"
           style="background-image: url(./images/banner.png);">
@@ -91,6 +95,32 @@
           </div>
         </div>
 
+        <div class="flex gap-24 absolute -bottom-20 right-40">
+
+          <div class="bg-[rgb(255,255,255)] px-8 py-9 rounded-3xl border-b-4 border-[rgb(29,209,0)] flex gap-x-4 w-[340px]">
+            <img class="border-2 border-dashed " src="./images/people.png" alt="">
+            <div>
+              <h4 class="text-[rgb(3,7,18)] font-bold text-4xl mb-2 font-sans">500K+</h4>
+              <p class="text-[rgba(3,7,18,0.6)] font-normal text-xl">Registered users</p>
+            </div>
+          </div>
+          <div class="bg-[rgb(255,255,255)] px-8 py-9 rounded-3xl border-b-4 border-[rgb(29,209,0)] flex gap-x-4 w-[340px]">
+            <img class="border-2 border-dashed " src="./images/ticket-cupon.png" alt="">
+            <div>
+              <h4 class="text-[rgb(3,7,18)] font-bold text-4xl mb-2 font-sans">1.7 lacks+</h4>
+              <p class="text-[rgba(3,7,18,0.6)] font-normal text-xl">Tickets sold</p>
+            </div>
+          </div>
+          <div class="bg-[rgb(255,255,255)] px-8 py-9 rounded-3xl border-b-4 border-[rgb(29,209,0)] flex gap-x-4 w-[340px]">
+            <img class="border-2 border-dashed " src="./images/stoppage.png" alt="">
+            <div>
+              <h4 class="text-[rgb(3,7,18)] font-bold text-4xl mb-2 font-sans">80K++</h4>
+              <p class="text-[rgba(3,7,18,0.6)] font-normal text-xl">Rental partners</p>
+            </div>
+          </div>
+
+        </div>
+
       </div>
     </div>
   </header>
@@ -98,7 +128,7 @@
   <main>
 
     <!-- Best offers for you section  -->
-    <section class="best-offer-for-you mt-44 mb-32 container  w-10/12 mx-auto">
+    <section class="best-offer-for-you mt-44 mb-32 container  mx-auto">
       <h1 class="text-5xl font-bold text-[rgb(3,7,18)] text-center mb-12">Best offers for you</h1>
 
       <div class="grid grid-cols-2 gap-10">
@@ -140,7 +170,7 @@
     <!-- P.H Paribahan section  -->
     <section class="mb-32 bg-[rgb(247,248,248)] rounded-t-[88px] py-[120px] border-t-4 border-t-[rgb(29,209,0)] "
       id="Paribahan">
-      <div class="container  w-10/12 mx-auto">
+      <div class="container  mx-auto">
 
 
         <div class="caption text-center">
@@ -209,7 +239,7 @@
 
         </div>
 
-        <!-- seats part -->
+        <!-- Select Your Seat -->
         <div class="mt-10 bg-[rgb(255,255,255)] p-8 rounded-3xl flex">
 
           <!-- left side  -->
@@ -225,7 +255,9 @@
               </div>
             </div>
 
+            <!-- seat plan  -->
             <div class="mt-6">
+
               <div class="flex justify-end mr-[75px] mb-6 ">
                 <div class="bg-[rgba(3,7,18,0.1)] rounded-xl w-24 py-4 flex justify-center"><img
                     src="./images/tabler-icon-steering-wheel.svg" alt=""></div>
@@ -394,13 +426,13 @@
       </div>
     </section>
 
+    <!-- modal section  -->
     <section>
-      <!-- <label for="my_modal_6" class="btn">open modal</label> -->
 
-      <input type="checkbox" id="my_modal_6" class="modal-toggle" disabled/>
+      <input type="checkbox" id="my_modal_6" class="modal-toggle" disabled />
       <div class="modal" role="dialog">
         <div class="">
-          <div class="bg-[rgb(242,241,241)] rounded-lg py-[225px] px-[360px]">
+          <!-- <div class="bg-[rgb(242,241,241)] rounded-lg py-[225px] px-[360px]"> -->
             <div class="bg-[rgb(255,255,255)] rounded-lg text-center w-[718px] py-24 mx-auto">
               <div class="flex justify-center"><img src="./images/success.png" alt=""></div>
               <h4 class="text-[rgb(39,174,96)] text-2xl font-bold py-10">SUCCESS</h4>
@@ -408,23 +440,56 @@
                 We are working hard to find the best service and deals for you. </p>
               <p class="text-[rgb(74,74,74)] font-light text-xl">Shortly you will find a confirmation in your email.</p>
               <div class="text-center mt-5">
-                <label for="my_modal_6" class="bg-[rgb(39,174,96)] text-[rgb(255,255,255)] rounded-3xl py-3 px-20">Continue</label>
+                <label for="my_modal_6"
+                  class="bg-[rgb(39,174,96)] text-[rgb(255,255,255)] rounded-3xl py-3 px-20">Continue</label>
               </div>
             </div>
-          </div>
-          
+          <!-- </div> -->
+
         </div>
       </div>
-
-
-
-
-
 
     </section>
   </main>
 
+  <!-- footer section  -->
+  <footer class="bg-[rgb(3,7,18)]">
+    <div class="container mx-auto py-32">
+      <div class="flex justify-between border-b-2 border-dashed border-[rgba(255,255,255,0.3)] pb-20">
+        <div>
+          <h4 class="text-[rgb(255,255,255)] font-extrabold text-4xl mb-4">P-Ticket</h4>
+          <p class="text-[rgba(255,255,255,0.8)] font-normal text-xl">P-Ticket is a digital platform to make your <br>
+            daily commuting better.</p>
+        </div>
+        <div>
+          <p class="font-semibold text-2xl text-[rgb(255,255,255)] mb-5">Download our app</p>
+          <div class="border-2 rounded-md py-4 px-5 flex gap-x-3">
+            <img src="./images/playstore.png" alt="">
+            <div>
+              <p class="text-[rgb(255,255,255)] mb-1.5 font-normal">GET IT ON</p>
+              <p class="text-[rgb(255,255,255)] mb-1.5 font-semibold text-2xl">Google Play</p>
+            </div>
+          </div>
+        </div>
+      </div>
 
+      <div class="mt-12 flex justify-between">
+
+        <div>
+          <p class="text-[rgba(255,255,255,0.7)] text-base font-normal ">@all rights reserved, P-Ticket services
+            limited.2024</p>
+        </div>
+        <div class="gap-x-8 flex">
+          <p class="text-[rgb(255,255,255)] text-base font-medium">Terms & condition</p>
+          <p class="text-[rgb(255,255,255)] text-base font-medium">Return & refund policy</p>
+          <p class="text-[rgb(255,255,255)] text-base font-medium">Privacy policy</p>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- script link  -->
   <script src="./scripts/script.js"></script>
 
 </body>
